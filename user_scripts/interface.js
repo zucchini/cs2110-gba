@@ -52,12 +52,12 @@ var data = {
             summary: "",
             slug: "ted"
         },
-        /*{
+        {
             title: "cnake",
             studentName: "Cem Gokmen",
             summary: "",
             slug: "cnake"
-        },*/
+        },
         {
             title: "Bubble Bobble",
             studentName: "Madison Grams",
