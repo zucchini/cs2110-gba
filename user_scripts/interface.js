@@ -2,42 +2,36 @@ var data = {
     'Spring 2018': [
         {
             title: "Garden Mystery",
-            image: "",
             studentName: "Judith Brennan",
             summary: "",
             slug: "garden-mystery"
         },
         {
             title: "Awful Game",
-            image: "",
             studentName: "Robert Brown",
             summary: "",
             slug: "awful-game"
         },
         {
             title: "PatThicc",
-            image: "",
             studentName: "Daniel Jung",
             summary: "",
             slug: "patthicc"
         },
         {
             title: "Ravioli",
-            image: "",
             studentName: "Stephen Kamali",
             summary: "",
             slug: "ravioli"
         },
         {
             title: "Yeji",
-            image: "",
             studentName: "Shannon Ke",
             summary: "",
             slug: "yeji"
         },
         {
             title: "Frogger",
-            image: "",
             studentName: "Tarun Maddali",
             summary: "",
             slug: "frogger"
@@ -46,7 +40,6 @@ var data = {
     'Fall 2017': [
         {
             title: "Come Find Me",
-            image: "",
             studentName: "Jonathan Gaul",
             summary: "",
             slug: "come-find-me"
@@ -55,35 +48,30 @@ var data = {
     'TA Games': [
         {
             title: "Ted",
-            image: "",
             studentName: "Austin Adams",
             summary: "",
             slug: "ted"
         },
-        {
+        /*{
             title: "cnake",
-            image: "",
             studentName: "Cem Gokmen",
             summary: "",
             slug: "cnake"
-        },
+        },*/
         {
             title: "Bubble Bobble",
-            image: "",
             studentName: "Madison Grams",
             summary: "",
             slug: "bubble-bobble"
         },
         {
             title: "Super Toad-ally Mario",
-            image: "",
             studentName: "Joshua Viszlai",
             summary: "",
             slug: "super-toad-ally-mario"
         },
         {
             title: "Pokemon Grind Version",
-            image: "",
             studentName: "Benjamin Yarmowich",
             summary: "",
             slug: "pokemon-grind"
@@ -103,7 +91,7 @@ var PortfolioItem = React.createClass({
                             <small>{this.props.studentName}</small>
                         </h3>
                         <p>{this.props.summary}</p>
-                        <p><a href={"./launcher.html#" + this.props.slug} className="btn btn-primary" role="button">Play</a></p>
+                        <p><a href={"./launcher.html#" + this.props.slug} className="btn btn-success" role="button">Play</a> <a href={"./binaries/" + this.props.slug + ".gba"} className="btn btn-primary" role="button">Download</a></p>
                     </div>
                 </div>
             </div>
@@ -119,7 +107,7 @@ var PortfolioGroup = React.createClass({
         if (this.state.active) {
             var items = this.props.data.map(function (item, i) {
                 return (
-                    [<PortfolioItem key={i} title={item.title} image={item.image} studentName={item.studentName}
+                    [<PortfolioItem key={i} title={item.title} studentName={item.studentName}
                                     summary={item.summary} slug={item.slug}></PortfolioItem>]
                 );
             }, this);
