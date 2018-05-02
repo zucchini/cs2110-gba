@@ -9,16 +9,20 @@
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 function attachBIOS(BIOS) {
+    console.log("Attaching bios");
     try {
         Iodine.attachBIOS(new Uint8Array(BIOS));
+        console.log("Attached bios");
     }
     catch (error) {
         Iodine.attachBIOS(BIOS);
     }
 }
 function attachROM(ROM) {
+    console.log("Attaching ROM of size " + ROM.length);
     try {
         Iodine.attachROM(new Uint8Array(ROM));
+        console.log("Attached ROM");
     }
     catch (error) {
         Iodine.attachROM(ROM);
@@ -60,10 +64,10 @@ function fileLoadROM() {
 function downloadFile(fileName, registrationHandler) {
     var ajax = new XMLHttpRequest();
     ajax.onload = registrationHandler;
-    ajax.open("GET", "./" + fileName, true);
+    ajax.open("GET", fileName, true);
     ajax.responseType = "arraybuffer";
     ajax.overrideMimeType("text/plain; charset=x-user-defined");
-    ajax.send(null);
+    ajax.send();
 }
 function processDownload(parentObj, attachHandler) {
     try {
