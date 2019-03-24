@@ -1,4 +1,66 @@
 var data = {
+    'Fall 2018': [
+        {
+            title: "Chess",
+            studentName: "Aditya Ramanathan",
+            summary: "",
+            slug: "chess"
+        },
+        {
+            title: "32 Bit Rackets",
+            studentName: "Benjamin Holmes",
+            summary: "",
+            slug: "32_Bit_Rackets"
+        },
+        {
+            title: "Minesweeper",
+            studentName: "Christopher Mao",
+            summary: "",
+            slug: "Minesweeper"
+        },
+        {
+            title: "Sunflower2048",
+            studentName: "Emily Buchanan",
+            summary: "",
+            slug: "Sunflower2048"
+        },
+        {
+            title: "To The Moon",
+            studentName: "Ildebrando De Courten",
+            summary: "",
+            slug: "Courten"
+        },
+        {
+            title: "Flow",
+            studentName: "Justine Powell",
+            summary: "",
+            slug: "Powel"
+        },
+        {
+            title: "HollowKnightGB",
+            studentName: "Kalen Patton",
+            summary: "",
+            slug: "HollowKnightGB"
+        },
+        {
+            title: "2048",
+            studentName: "Kiet Tran",
+            summary: "",
+            slug: "Tran"
+        },
+        {
+            title: "The Serious House",
+            studentName: "Siyan Li",
+            summary: "",
+            slug: "The-Serious-House"
+        },
+        {
+            title: "Befunge Abridged Advance",
+            studentName: "Yi Yao",
+            summary: "",
+            slug: "Yao"
+        }
+    ],
     'Spring 2018': [
         {
             title: "Garden Mystery",
@@ -23,12 +85,6 @@ var data = {
             studentName: "Stephen Kamali",
             summary: "",
             slug: "ravioli"
-        },
-        {
-            title: "Yeji",
-            studentName: "Shannon Ke",
-            summary: "",
-            slug: "yeji"
         },
         {
             title: "Frogger",
@@ -75,6 +131,18 @@ var data = {
             studentName: "Benjamin Yarmowich",
             summary: "",
             slug: "pokemon-grind"
+        },
+        {
+            title: "Yeji",
+            studentName: "Shannon Ke",
+            summary: "",
+            slug: "yeji"
+        },
+        {
+            title: "Manley Craft",
+            studentName: "Manley Roberts",
+            summary: "",
+            slug: "MANLEYCRAFT"
         },
     ]
 };
