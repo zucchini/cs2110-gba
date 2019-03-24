@@ -1,8 +1,4 @@
 var data = {
-    'Fall 2018': [
-
-
-    ]
     'Spring 2018': [
         {
             title: "Garden Mystery",
@@ -27,6 +23,12 @@ var data = {
             studentName: "Stephen Kamali",
             summary: "",
             slug: "ravioli"
+        },
+        {
+            title: "Yeji",
+            studentName: "Shannon Ke",
+            summary: "",
+            slug: "yeji"
         },
         {
             title: "Frogger",
@@ -73,18 +75,6 @@ var data = {
             studentName: "Benjamin Yarmowich",
             summary: "",
             slug: "pokemon-grind"
-        },
-        {
-            title: "Yeji",
-            studentName: "Shannon Ke",
-            summary: "",
-            slug: "yeji"
-        },
-        {
-            title: "ManleyCraft",
-            studentName: "Manley Roberts",
-            summary: "",
-            slug: "MANLEYCRAFT"
         },
     ]
 };
