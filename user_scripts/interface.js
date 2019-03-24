@@ -153,7 +153,7 @@ var PortfolioItem = React.createClass({
         return (
             <div className="col-sm-6 col-md-4">
                 <div className="thumbnail">
-                    <img src={"./images/" + this.props.slug + ".png"}/>
+                    <img src={"./images/" + this.props.slug + ".png"} onerror="this.src={'./images/' + this.props.slug + '.PNG'}"/>
                     <div className="caption">
                         <h3>{this.props.title}<br/>
                             <small>{this.props.studentName}</small>
