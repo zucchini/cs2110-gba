@@ -59,6 +59,12 @@ var data = {
             studentName: "Yi Yao",
             summary: "",
             slug: "Yao"
+        },
+        {
+            title: "I Wanna Be The Student",
+            studentName: "Jacob Allen",
+            summary: "",
+            slug: "IWannaBeTheStudent"
         }
     ],
     'Spring 2018': [
